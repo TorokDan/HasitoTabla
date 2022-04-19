@@ -2,6 +2,11 @@
 
 namespace HasitoTabla
 {
+    public class Ember
+    {
+        public string nev;
+        public int fizetes;
+    }
     class Program
     {
         static void Main(string[] args)
@@ -10,14 +15,28 @@ namespace HasitoTabla
             // "UK" <> Egyesült királyság
             // "F"  <> Franciaország
 
-            HasitoTabla ht = new HasitoTabla();
-            ht.Beszuras("HU", "Magyarorszag");
-            ht.Beszuras("FR", "Franciaország");
+            HasitoTabla<string,string> ht = new HasitoTabla<string,string>();
+            ht.Beszuras("H", "Magyarorszag");
+            ht.Beszuras("C", "Chile");
+            ht.Beszuras("N", "Németország");
+            ht.Beszuras("NL", "Norvégia");
             ht.Beszuras("HON", "Honduras");
-
-            Console.WriteLine(ht.Kereses("HU"));
-            Console.WriteLine(ht.Kereses("FR"));
+            // ht.Beszuras("F", "Franciaország");
+            ht["F"] = "Franciaország";
+            ht.Beszuras("S", "Spanyolország");
+            ht.Beszuras("S", "Svédország");
+            
+            Console.WriteLine(ht.Kereses("H"));
+            // Console.WriteLine(ht.Kereses("C"));
+            Console.WriteLine(ht["C"]);
+            Console.WriteLine(ht.Kereses("N"));
+            Console.WriteLine(ht.Kereses("NL"));
             Console.WriteLine(ht.Kereses("HON"));
+            Console.WriteLine(ht.Kereses("F"));
+            Console.WriteLine(ht.Kereses("S"));
+            Console.WriteLine(ht.Kereses("S"));
+
+            
         }
     }
 }

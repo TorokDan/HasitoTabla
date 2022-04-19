@@ -1,25 +1,36 @@
+using System;
+
 namespace HasitoTabla
 {
-    public class HasitoTabla
+    public class HasitoTabla<K,T>
     {
-        private string[] _tartalmak;
+        private T[] _tartalmak;
 
         public HasitoTabla()
         {
-            _tartalmak = new string[26];
+            _tartalmak = new T[13];
         }
 
-        public void Beszuras(string orszagkod, string orszag)
+        public T this[K kulcs]
         {
-            char kezdobetu = orszagkod.ToUpper()[0];
-            int index = (int) kezdobetu - (int)'A';
-            _tartalmak[index] = orszag;
+            get
+            {
+                return Kereses(kulcs);
+            }
+            set
+            {
+                Beszuras(kulcs, value);
+            }
+        }
+        public void Beszuras(K kulcs, T tartalom)
+        {
+            int index = Math.Abs(kulcs.GetHashCode()) % 13;
+            _tartalmak[index] = tartalom;
         }
 
-        public string Kereses(string orszagkod)
+        public T Kereses(K kulcs)
         {
-            char kezdobetu = orszagkod.ToUpper()[0];
-            int index = (int) kezdobetu - (int)'A';
+            int index = Math.Abs(kulcs.GetHashCode()) % 13;
             return _tartalmak[index];
         }
     }
