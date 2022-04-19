@@ -23,7 +23,7 @@ namespace HasitoTabla
             ht.Beszuras("HON", "Honduras");
             // ht.Beszuras("F", "Franciaország");
             ht["F"] = "Franciaország";
-            ht.Beszuras("S", "Spanyolország");
+            ht.Beszuras("SP", "Spanyolország");
             ht.Beszuras("S", "Svédország");
             
             Console.WriteLine(ht.Kereses("H"));
@@ -33,7 +33,7 @@ namespace HasitoTabla
             Console.WriteLine(ht.Kereses("NL"));
             Console.WriteLine(ht.Kereses("HON"));
             Console.WriteLine(ht.Kereses("F"));
-            Console.WriteLine(ht.Kereses("S"));
+            Console.WriteLine(ht.Kereses("SP"));
             Console.WriteLine(ht.Kereses("S"));
 
             
