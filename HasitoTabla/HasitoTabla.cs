@@ -11,15 +11,33 @@ namespace HasitoTabla
             public K kulcs;
             public T tartalom;
         }
+
+        public delegate int HasitoDelegalt(K kulcs);
+
+        private HasitoDelegalt hasitoFuggveny;
         
         private List<HasitoElem>[] _tartalmak;
 
-        public HasitoTabla()
+        private int Mod13(K kulcs)
         {
-            _tartalmak = new List<HasitoElem>[13];
+            return Math.Abs(kulcs.GetHashCode()) % 13;
+        }
+
+        public HasitoTabla(HasitoDelegalt hasitofv = null, int tombMeret = 13)
+        {
+            _tartalmak = new List<HasitoElem>[tombMeret];
             for (int i = 0; i < _tartalmak.Length; i++)
             {
                 _tartalmak[i] = new List<HasitoElem>();
+            }
+
+            if (hasitofv != null)
+            {
+                hasitoFuggveny = hasitofv;
+            }
+            else
+            {
+                hasitoFuggveny = Mod13;
             }
         }
 
@@ -36,7 +54,7 @@ namespace HasitoTabla
         }
         public void Beszuras(K kulcs, T tartalom)
         {
-            int index = Math.Abs(kulcs.GetHashCode()) % 13;
+            int index = hasitoFuggveny(kulcs);
             _tartalmak[index].Add(new HasitoElem()
             {
                 kulcs = kulcs,
@@ -46,7 +64,7 @@ namespace HasitoTabla
 
         public T Kereses(K kulcs)
         {
-            int index = Math.Abs(kulcs.GetHashCode()) % 13;
+            int index = hasitoFuggveny(kulcs);
             return LinearisKereses(kulcs, index);
         }
 

@@ -2,20 +2,25 @@
 
 namespace HasitoTabla
 {
-    public class Ember
-    {
-        public string nev;
-        public int fizetes;
-    }
+    
     class Program
     {
+        static int Mod19(string kulcs)
+         {
+             return Math.Abs(kulcs.GetHashCode()) % 19;
+         }
+
+        static int HasitoKezdobetuvel(string orszagnev)
+        {
+            return orszagnev.ToUpper()[0] - 'A';
+        }
         static void Main(string[] args)
         {
             // "HU" <> Magyarország
             // "UK" <> Egyesült királyság
             // "F"  <> Franciaország
 
-            HasitoTabla<string,string> ht = new HasitoTabla<string,string>();
+            HasitoTabla<string,string> ht = new HasitoTabla<string,string>(HasitoKezdobetuvel, 26);
             ht.Beszuras("H", "Magyarorszag");
             ht.Beszuras("C", "Chile");
             ht.Beszuras("N", "Németország");
