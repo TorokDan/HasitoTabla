@@ -1,0 +1,16 @@
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/HasitoTabla
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/HasitoTabla.deps.json
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/HasitoTabla.runtimeconfig.json
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/HasitoTabla.runtimeconfig.dev.json
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/HasitoTabla.dll
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/ref/HasitoTabla.dll
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/bin/Debug/net5.0/HasitoTabla.pdb
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.csprojAssemblyReference.cache
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.GeneratedMSBuildEditorConfig.editorconfig
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.AssemblyInfoInputs.cache
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.AssemblyInfo.cs
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.csproj.CoreCompileInputs.cache
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.dll
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/ref/HasitoTabla.dll
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.pdb
+/home/TorokDan/Documents/egyetem/prog2/grafok/HasitoTabla/HasitoTabla/obj/Debug/net5.0/HasitoTabla.genruntimeconfig.cache
